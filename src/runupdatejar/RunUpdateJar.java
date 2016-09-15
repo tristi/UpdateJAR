@@ -111,6 +111,8 @@ public class RunUpdateJar {
     public static void execute() {
         try {
             String line;
+            //Set Reginonal Setting Locale ENGLISH(United Status)
+            //Process p = Runtime.getRuntime().exec("cmd /c java -Duser.country=US -Duser.language=en -jar " + sc.getAppName() + ".jar");
             Process p = Runtime.getRuntime().exec("cmd /c java -jar " + sc.getAppName() + ".jar");
             System.out.println("Done.");
         } catch (IOException err) {
